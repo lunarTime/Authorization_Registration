@@ -7,39 +7,38 @@
 </head>
 <body>
 
-    <div class="bodybox"> 
-        <div class="mainbox">
-            <div class="blurbox">
-             
-                <form action="test.php" method="post">
-                    <h2></h2>
+        <div class="bodybox"> 
+            <div class="mainbox">
+                <div class="blurbox">
+
+                <form action="indexphp.php" method="POST">
+
                     <div class="img" >
                         <img src="source/enter.svg" alt="picture">
                     </div>
 
                     <span class="uname">Логин</span>
-                        <div class="log">       
-                            <input  type="text" name="uname" maxlength="20" required>
-                        </div>  
+                    <div class="log">       
+                        <input type="text" name="uname" required>
+                    </div>  
 
                     <span class="psw">Пароль</span>
-                        <div class="pas">
-                            <input type="password" name="psw" maxlength="20" required>
-                        </div> 
-                        
+                    <div class="pas">
+                        <input type="password" name="psw">
+                    </div> 
+
                     <div class="remember">
                         <input type="checkbox" checked="checked">Запомнить меня<br>
                     </div>
 
                     <button class="butlog" type="submit"><span class="enterspan">Войти</span></button><br>
-                    <button class="butreg"><span class="regspan">Регистрация</span></button><br>                  
-                    
+                    <button class="butreg" type="submit"><span class="regspan">Регистрация</span></button><br>
                     <span class="forgot"><a href="#">Забыли пароль или логин?</a></span>
                 </form>
 
+                </div>
             </div>
-        </div>
-    </div> 
+        </div> 
 
 </body>
 </html>
