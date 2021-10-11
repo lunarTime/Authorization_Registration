@@ -5,8 +5,7 @@
     $pas = filter_var(trim($_POST['psw']),
     FILTER_SANITIZE_STRING);
 
-    if(mb_strlen($login) < 5 || mb_strlen($login) > 90) {
+    if(mb_strlen($log) < 5 || mb_strlen($log) > 90) {
         echo "Недопустимая длина логина";
         exit();
     }
-?>
