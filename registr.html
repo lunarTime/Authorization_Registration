@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="source/css/style-reg.css">
+    <script src="source/js/indexjs-reg.js"></script>
+
+</head>
+<body alink="white" vlink="white" style="background-image: url('source/bgsvg.svg')">
+
+        <div class="bodybox"> 
+            <div class="mainbox">
+                <div class="blurbox">
+
+                <form onsubmit="return checkPas()" id="myForm" action="/source/php/php-reg.php" method="post">
+
+                    <div class="img" >
+                        <img src="/source/usernew.svg" alt="picture">
+                    </div>
+
+                    <span class="uname">Логин</span>
+                    <div class="log">       
+                        <input type="text" name="uname" required>
+                    </div>  
+
+                    <span class="psw">Пароль</span>
+                    <div class="pas">
+                        <input type="password" id="psw" name="psw" pattern="[a-zA-Z0-9]{6,90}" onkeyup="checkPas()" required>
+                    </div> 
+
+                    <span class="psw">Повтор пароля</span>
+                    <div class="pas">
+                        <input type="password" id="psw2" name="psw2" pattern="[a-zA-Z0-9]{6,90}" onkeyup="checkPas()" required>
+                    </div> 
+
+                    <span id='message'></span><br>
+
+                    <button class="butreg" type="submit"><span class="regspan">Регистрация</span></button><br>
+                    <button class="butlog" type="button"><span class="enterspan"><a style="text-decoration: none;" href="login.html">Авторизация</a></span></button><br>
+                </form>
+
+                </div>
+            </div>
+        </div> 
+
+</body>
+</html>

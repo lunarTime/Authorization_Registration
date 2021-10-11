@@ -8,7 +8,6 @@ body {
     margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('source/bgsvg.svg');
 }
 
 .bodybox {
@@ -74,7 +73,7 @@ body {
 .regspan {
     position: relative;
     transition: 0.3s;
-  }
+}
 
 .enterspan:after,
 .regspan:after {
@@ -83,13 +82,13 @@ body {
     opacity: 0;
     right: -20px;
     transition: 0.3s;
-  }
+}
 
 .butlog:hover .enterspan,
 .butreg:hover .regspan {
     padding-right: 25px;
-  }
-  
+}
+
 .butlog:hover .enterspan:after,
 .butreg:hover .regspan:after {
     opacity: 1;
@@ -98,8 +97,10 @@ body {
 
 .log,
 .pas,
+.pas2,
 .uname,
 .psw,
+.psw2,
 .img {
     margin: 18px;
     display: flex;
@@ -118,7 +119,8 @@ input {
 }
 
 .uname,
-.psw {
+.psw,
+.psw2 {
     font-size: 18px;
 }
 
@@ -128,7 +130,7 @@ input:focus{
     box-shadow: 0px 0px 50px 3px rgba(195, 44, 82, 0.534);
 }
 
-.remember {
+#message {
     display: flex;
     justify-content: center;
 }
