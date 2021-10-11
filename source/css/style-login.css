@@ -8,6 +8,7 @@ body {
     margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url('../bg.svg');
 }
 
 .bodybox {
@@ -130,4 +131,8 @@ input:focus{
 .remember {
     display: flex;
     justify-content: center;
+}
+
+body {
+    background-image: url('/source/bg.svg');
 }

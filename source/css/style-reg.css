@@ -134,3 +134,7 @@ input:focus{
     display: flex;
     justify-content: center;
 }
+
+body {
+    background-image: url('source/bg.svg');
+}

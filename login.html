@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/source/css/style-login.css">
-    <script src="/source/js/indexjs-log.js"></script>
+    <link rel="stylesheet" href="source/css/style-login.css">
+    <script src="source/js/login.js"></script>
 </head>
-<body alink="white" vlink="white" style="background-image: url('source/bgsvg.svg')">
+    <body alink="white" vlink="white">
 
         <div class="bodybox"> 
             <div class="mainbox">
                 <div class="blurbox">
 
-                <form action="/source/php/php-log.php" method="post">
+                <form action="source/php/login.php" method="post">
 
                     <div class="img">
-                        <img src="source/enter.svg" alt="picture">
+                        <img src="source/enter.svg"
+                             alt="enterPicture">
                     </div>
 
                     <span class="uname">Логин</span>
-                    <div class="log">       
-                        <input type="text" name="uname" required>
-                    </div>  
+                        <div class="log">
+                            <input type="text"
+                                   name="uname"
+                                   required>
+                        </div>
 
                     <span class="psw">Пароль</span>
-                    <div class="pas">
-                        <input type="password" name="psw" required>
-                    </div> 
+                        <div class="pas">
+                            <input type="password"
+                                   name="psw"
+                                   required>
+                        </div>
 
                     <div class="remember">
-                        <input type="checkbox" id="rm" name="rm">Запомнить меня<br>
+                        <input type="checkbox"
+                               id="rm"
+                               name="rm">Запомнить меня<br>
                     </div>
 
-                    <button class="butlog" type="submit"><span class="enterspan">Войти</span></button><br>
-                    <button class="butreg" type="button"><span class="regspan"><a style="text-decoration: none;" href="registr.html">Регистрация</a></span></button><br>
+                    <button class="butlog" type="submit">
+                        <span class="enterspan">Войти</span>
+                    </button><br>
+
+                    <button class="butreg" type="button">
+                        <span class="regspan">
+                            <a style="text-decoration: none;"
+                               href="registration.html">Регистрация</a>
+                        </span>
+                    </button><br>
 
                 </form>
 
@@ -43,5 +59,5 @@
             </div>
         </div> 
 
-</body>
+    </body>
 </html>
