@@ -1,4 +1,4 @@
-function checkPas(){
+const checkPas = () => {
     let pas1 = document.getElementById('psw').value;
     let pas2 = document.getElementById('psw2').value;
     let msg = document.getElementById('message');
