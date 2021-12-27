@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0px;
+}
+
+.bodybox {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../images/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blurbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.185);  
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0px 0px 100px black;
+}
+
+.mainbox {
+    width: 450px;
+    height: 650px;
+}
+
+.butlog {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #C04F5A;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.butreg {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #2d4e69;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.enterspan,
+.regspan {
+    position: relative;
+    transition: 0.3s;
+}
+
+.enterspan:after,
+.regspan:after {
+    content: '\203A';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.butlog:hover .enterspan,
+.butreg:hover .regspan {
+    padding-right: 25px;
+}
+
+.butlog:hover .enterspan:after,
+.butreg:hover .regspan:after {
+    opacity: 1;
+    right: 0;
+}
+
+.log,.pas,
+.pas2,.uname,
+.psw,.psw2,
+.img {
+    margin: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 75%;
+}
+
+input {
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.uname,
+.psw,
+.psw2 {
+    font-size: 16px;
+}
+
+input:focus{
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+}
